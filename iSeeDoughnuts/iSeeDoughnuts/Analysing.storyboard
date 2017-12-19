@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kRS-Y1-7Vt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NaX-hT-Orf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,6 +16,21 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3KB-hk-ddj">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="NaX-hT-Orf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qlK-N2-mKT">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kRS-Y1-7Vt" kind="relationship" relationship="rootViewController" id="6Uf-rt-jcU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ivg-te-rh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-682" y="150"/>
+        </scene>
         <!--Analysing View Controller-->
         <scene sceneID="sq1-zs-eEZ">
             <objects>
@@ -48,6 +63,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VX9-PI-O5j"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hsx-w4-VM9"/>
                     <connections>
                         <outlet property="imageView" destination="XCO-fU-igK" id="b2J-sH-eSy"/>
                         <outlet property="textLabel" destination="2Dq-09-5f1" id="W9s-VB-RDh"/>

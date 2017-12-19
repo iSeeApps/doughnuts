@@ -12,6 +12,8 @@ class AnalysingViewController: UIViewController {
     @IBOutlet private var textLabel: UILabel!
     @IBOutlet private var imageView: UIImageView!
 
+    var screenToPresent: String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,5 +34,13 @@ class AnalysingViewController: UIViewController {
 
         let randomIndex = Int(arc4random_uniform(UInt32(messages.count)))
         textLabel.text = messages[randomIndex]
+
+        perform(#selector(presentScreen), with: nil, afterDelay: 3)
+    }
+
+    @objc func presentScreen() {
+        let board = UIStoryboard(name: "RightWrong", bundle: nil)
+        let viewController = board.instantiateViewController(withIdentifier: screenToPresent)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

@@ -19,7 +19,7 @@
         <!--Right Wrong View Controller-->
         <scene sceneID="qjR-mE-fa5">
             <objects>
-                <viewController id="Zca-7t-tAs" customClass="RightWrongViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Right" id="Zca-7t-tAs" customClass="RightWrongViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F8J-Yz-I88">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                 </constraints>
                                 <state key="normal" image="White x"/>
                                 <connections>
-                                    <segue destination="qrH-2q-mTX" kind="show" id="DpD-89-t7p"/>
+                                    <action selector="dimissAnimated" destination="Zca-7t-tAs" eventType="touchUpInside" id="wkf-vM-6cz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEO Approved! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJL-eI-qPL">
@@ -60,7 +60,7 @@
         <!--Right Wrong View Controller-->
         <scene sceneID="WLM-bR-PR5">
             <objects>
-                <viewController id="qrH-2q-mTX" customClass="RightWrongViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Wrong" id="qrH-2q-mTX" customClass="RightWrongViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fdp-Hn-cox">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,7 @@
                                 </constraints>
                                 <state key="normal" image="White x"/>
                                 <connections>
-                                    <segue destination="GJA-ff-e4u" kind="show" id="oBu-cW-K0A"/>
+                                    <action selector="dimissAnimated" destination="qrH-2q-mTX" eventType="touchUpInside" id="MF7-fn-oUs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEO Rejected! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sus-xv-4a8">
@@ -110,7 +110,7 @@
         <!--Donut Celebration View Controller-->
         <scene sceneID="GBD-sV-EQU">
             <objects>
-                <viewController id="69G-T3-kcG" customClass="DonutCelebrationViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Donut" id="69G-T3-kcG" customClass="DonutCelebrationViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IlD-C1-9lM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
                                 </constraints>
                                 <state key="normal" image="White x"/>
                                 <connections>
-                                    <segue destination="W3R-NW-h7L" kind="show" id="etM-MC-bJc"/>
+                                    <action selector="dimissAnimated" destination="69G-T3-kcG" eventType="touchUpInside" id="nVd-es-5PV"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sprinkles0" translatesAutoresizingMaskIntoConstraints="NO" id="hlw-jj-rjw">
@@ -154,7 +154,7 @@
         <!--Hot Dog View Controller-->
         <scene sceneID="57h-Tx-9G6">
             <objects>
-                <viewController id="W3R-NW-h7L" customClass="HotDogViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Hotdog" id="W3R-NW-h7L" customClass="HotDogViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lax-Kh-5se">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,7 +167,7 @@
                                 </constraints>
                                 <state key="normal" image="White x"/>
                                 <connections>
-                                    <segue destination="pqJ-0d-b7p" kind="show" id="TQj-TA-6Gt"/>
+                                    <action selector="dimissAnimated" destination="W3R-NW-h7L" eventType="touchUpInside" id="oqt-jg-zAG"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRI-Ud-v7O" customClass="AnimationPlayerView" customModule="iSeeDoughnuts" customModuleProvider="target">
@@ -211,7 +211,7 @@
         <!--Vomit View Controller-->
         <scene sceneID="08c-qn-7Mi">
             <objects>
-                <viewController id="GJA-ff-e4u" customClass="VomitViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Vomit" id="GJA-ff-e4u" customClass="VomitViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KA2-I0-voE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,7 +224,7 @@
                                 </constraints>
                                 <state key="normal" image="White x"/>
                                 <connections>
-                                    <segue destination="69G-T3-kcG" kind="show" id="bq5-VY-Kuh"/>
+                                    <action selector="dimissAnimated" destination="GJA-ff-e4u" eventType="touchUpInside" id="scT-Ei-ctS"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vomit" translatesAutoresizingMaskIntoConstraints="NO" id="Hyc-jx-oJs">
@@ -255,7 +255,7 @@
         <!--Hot Dog View Controller-->
         <scene sceneID="BRi-Ju-KO6">
             <objects>
-                <viewController id="pqJ-0d-b7p" customClass="HotDogViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotHotdog" id="pqJ-0d-b7p" customClass="HotDogViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6V7-5c-Ji5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,7 +268,7 @@
                                 </constraints>
                                 <state key="normal" image="White x"/>
                                 <connections>
-                                    <segue destination="Zca-7t-tAs" kind="show" id="odY-Xa-lnv"/>
+                                    <action selector="dimissAnimated" destination="pqJ-0d-b7p" eventType="touchUpInside" id="VeJ-oR-Qbc"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jl7-jV-fDX" customClass="AnimationPlayerView" customModule="iSeeDoughnuts" customModuleProvider="target">

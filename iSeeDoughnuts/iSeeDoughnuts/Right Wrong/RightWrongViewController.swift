@@ -8,6 +8,12 @@
 
 import UIKit
 
+extension UIViewController {
+    @IBAction func dimissAnimated() {
+        navigationController?.dismiss(animated: true)
+    }
+}
+
 class RightWrongViewController: UIViewController {
 
     override func viewDidLoad() {

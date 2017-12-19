@@ -11,11 +11,12 @@ import UIKit
 class PostLaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        perform(#selector(showAnalysingScreen), with: nil, afterDelay: 3)
+        perform(#selector(showCameraScreen), with: nil, afterDelay: 1)
     }
 
-    @objc func showAnalysingScreen() {
-        let viewController = UIStoryboard(name: "Analysing", bundle: nil).instantiateInitialViewController()!
+    @objc func showCameraScreen() {
+        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
+        viewController.modalTransitionStyle = .crossDissolve
         present(viewController, animated: true)
     }
 }
