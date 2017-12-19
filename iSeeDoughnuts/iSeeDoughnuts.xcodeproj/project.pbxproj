@@ -25,6 +25,11 @@
 		58FD46BD1FE849F9002E1A24 /* HotDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46BC1FE849F9002E1A24 /* HotDogViewController.swift */; };
 		58FD46C41FE8572C002E1A24 /* notHotdog.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 58FD46C31FE8572C002E1A24 /* notHotdog.m4v */; };
 		58FD46C61FE85ABD002E1A24 /* hotdog.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 58FD46C51FE85ABD002E1A24 /* hotdog.m4v */; };
+		F486D2011FE91D3900FF1226 /* background_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = F486D2001FE91D3900FF1226 /* background_pattern.png */; };
+		F493A9CC1FE80F1E00CE1406 /* Analysing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F493A9CB1FE80F1E00CE1406 /* Analysing.storyboard */; };
+		F493A9CE1FE811BA00CE1406 /* AnalysingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493A9CD1FE811BA00CE1406 /* AnalysingViewController.swift */; };
+		F493A9D21FE824C900CE1406 /* PostLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F493A9D11FE824C900CE1406 /* PostLaunchScreen.storyboard */; };
+		F493A9D41FE824F300CE1406 /* PostLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493A9D31FE824F300CE1406 /* PostLaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		58FD46BC1FE849F9002E1A24 /* HotDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotDogViewController.swift; sourceTree = "<group>"; };
 		58FD46C31FE8572C002E1A24 /* notHotdog.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = notHotdog.m4v; sourceTree = "<group>"; };
 		58FD46C51FE85ABD002E1A24 /* hotdog.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = hotdog.m4v; sourceTree = "<group>"; };
+		F486D2001FE91D3900FF1226 /* background_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_pattern.png; sourceTree = "<group>"; };
+		F493A9CB1FE80F1E00CE1406 /* Analysing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Analysing.storyboard; sourceTree = "<group>"; };
+		F493A9CD1FE811BA00CE1406 /* AnalysingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysingViewController.swift; sourceTree = "<group>"; };
+		F493A9D11FE824C900CE1406 /* PostLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostLaunchScreen.storyboard; sourceTree = "<group>"; };
+		F493A9D31FE824F300CE1406 /* PostLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,11 @@
 				583184B31FE3205E00A1FB0C /* Assets.xcassets */,
 				583184B51FE3205E00A1FB0C /* LaunchScreen.storyboard */,
 				583184B81FE3205E00A1FB0C /* Info.plist */,
+				F493A9CB1FE80F1E00CE1406 /* Analysing.storyboard */,
+				F493A9CD1FE811BA00CE1406 /* AnalysingViewController.swift */,
+				F493A9D11FE824C900CE1406 /* PostLaunchScreen.storyboard */,
+				F493A9D31FE824F300CE1406 /* PostLaunchScreenViewController.swift */,
+				F486D2001FE91D3900FF1226 /* background_pattern.png */,
 			);
 			path = iSeeDoughnuts;
 			sourceTree = "<group>";
@@ -205,9 +220,12 @@
 				58FD46C41FE8572C002E1A24 /* notHotdog.m4v in Resources */,
 				583184B71FE3205E00A1FB0C /* LaunchScreen.storyboard in Resources */,
 				58FD46C61FE85ABD002E1A24 /* hotdog.m4v in Resources */,
+				F493A9CC1FE80F1E00CE1406 /* Analysing.storyboard in Resources */,
+				F486D2011FE91D3900FF1226 /* background_pattern.png in Resources */,
 				583184B41FE3205E00A1FB0C /* Assets.xcassets in Resources */,
 				583184B21FE3205E00A1FB0C /* Main.storyboard in Resources */,
 				58FD469E1FE80ED1002E1A24 /* RightWrong.storyboard in Resources */,
+				F493A9D21FE824C900CE1406 /* PostLaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				583184C01FE320A000A1FB0C /* BaseViewController.swift in Sources */,
+				F493A9CE1FE811BA00CE1406 /* AnalysingViewController.swift in Sources */,
 				583184AF1FE3205E00A1FB0C /* MainViewController.swift in Sources */,
 				583184C41FE324EA00A1FB0C /* food.mlmodel in Sources */,
 				58FD46B81FE84758002E1A24 /* MovieAnimationType.swift in Sources */,
@@ -227,6 +246,7 @@
 				583184C21FE3234500A1FB0C /* FrameExtractor.swift in Sources */,
 				58FD46BD1FE849F9002E1A24 /* HotDogViewController.swift in Sources */,
 				58FD46B71FE84758002E1A24 /* AnimationPlayerView.swift in Sources */,
+				F493A9D41FE824F300CE1406 /* PostLaunchScreenViewController.swift in Sources */,
 				583184AD1FE3205E00A1FB0C /* AppDelegate.swift in Sources */,
 				58FD46A21FE82609002E1A24 /* DonutCelebrationViewController.swift in Sources */,
 				58FD46A01FE80EF8002E1A24 /* VomitViewController.swift in Sources */,

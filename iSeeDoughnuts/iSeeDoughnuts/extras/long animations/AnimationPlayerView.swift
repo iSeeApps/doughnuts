@@ -92,9 +92,9 @@ extension AnimationPlayerFileType {
         })
 
         let intervalTime = UInt64( 1.0 / masterView.progressUpdateFrequency) * NSEC_PER_SEC
-        updateTimerSource?.scheduleRepeating(deadline: DispatchTime.now(),
-                                             interval: DispatchTimeInterval.nanoseconds(Int(intervalTime)),
-                                             leeway: DispatchTimeInterval.nanoseconds(100))
+        updateTimerSource?.schedule(deadline: DispatchTime.now(),
+                                    repeating: DispatchTimeInterval.nanoseconds(Int(intervalTime)),
+                                    leeway: DispatchTimeInterval.nanoseconds(100))
 
         updateTimerSource?.resume()
 
@@ -123,7 +123,7 @@ open class AnimationPlayerView: UIView {
     /// The file name of the animation. This will attempt to load data when set.
     @IBInspectable open var filename: String? {
         didSet {
-            guard let filename = filename, !filename.characters.isEmpty else {
+            guard let filename = filename, !filename.isEmpty else {
                 unload()
                 return
             }
