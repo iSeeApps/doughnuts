@@ -123,7 +123,7 @@
                                 </constraints>
                                 <state key="normal" image="White x"/>
                                 <connections>
-                                    <segue destination="Zca-7t-tAs" kind="show" id="Ofx-rQ-KLO"/>
+                                    <segue destination="W3R-NW-h7L" kind="show" id="etM-MC-bJc"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sprinkles0" translatesAutoresizingMaskIntoConstraints="NO" id="hlw-jj-rjw">
@@ -150,6 +150,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2C-Ww-136" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="417" y="882"/>
+        </scene>
+        <!--Hot Dog View Controller-->
+        <scene sceneID="57h-Tx-9G6">
+            <objects>
+                <viewController id="W3R-NW-h7L" customClass="HotDogViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lax-Kh-5se">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDB-6l-Wa3">
+                                <rect key="frame" x="152" y="547" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="7Hv-Y6-UDe"/>
+                                    <constraint firstAttribute="height" constant="70" id="9MH-Du-o1c"/>
+                                </constraints>
+                                <state key="normal" image="White x"/>
+                                <connections>
+                                    <segue destination="pqJ-0d-b7p" kind="show" id="TQj-TA-6Gt"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRI-Ud-v7O" customClass="AnimationPlayerView" customModule="iSeeDoughnuts" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="39" width="375" height="316"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VRI-Ud-v7O" secondAttribute="height" multiplier="375:316" id="phy-yz-n6M"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="filename" value="hotdog"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotdog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvk-8O-uLl">
+                                <rect key="frame" x="0.0" y="395" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kDB-6l-Wa3" firstAttribute="centerX" secondItem="Lax-Kh-5se" secondAttribute="centerX" id="6SF-vb-Pfw"/>
+                            <constraint firstItem="VRI-Ud-v7O" firstAttribute="trailing" secondItem="dia-32-pgq" secondAttribute="trailing" id="Azj-2x-wHD"/>
+                            <constraint firstItem="Hvk-8O-uLl" firstAttribute="leading" secondItem="dia-32-pgq" secondAttribute="leading" id="Ka7-m7-RJo"/>
+                            <constraint firstItem="Hvk-8O-uLl" firstAttribute="top" secondItem="VRI-Ud-v7O" secondAttribute="bottom" constant="40" id="cph-TF-Ezs"/>
+                            <constraint firstItem="VRI-Ud-v7O" firstAttribute="leading" secondItem="dia-32-pgq" secondAttribute="leading" id="dQ1-BR-uMe"/>
+                            <constraint firstItem="dia-32-pgq" firstAttribute="trailing" secondItem="Hvk-8O-uLl" secondAttribute="trailing" id="f7f-8m-t75"/>
+                            <constraint firstItem="dia-32-pgq" firstAttribute="bottom" secondItem="kDB-6l-Wa3" secondAttribute="bottom" constant="50" id="mqi-y2-Qp8"/>
+                            <constraint firstItem="VRI-Ud-v7O" firstAttribute="top" secondItem="dia-32-pgq" secondAttribute="top" constant="19" id="qRh-pk-Ga0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dia-32-pgq"/>
+                    </view>
+                    <connections>
+                        <outlet property="moviePlayer" destination="VRI-Ud-v7O" id="7Du-sx-FaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="346-KG-o8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8" y="879.31034482758628"/>
         </scene>
         <!--Vomit View Controller-->
         <scene sceneID="08c-qn-7Mi">
@@ -194,6 +251,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghq-vn-0pe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-394.39999999999998" y="856.82158920539734"/>
+        </scene>
+        <!--Hot Dog View Controller-->
+        <scene sceneID="BRi-Ju-KO6">
+            <objects>
+                <viewController id="pqJ-0d-b7p" customClass="HotDogViewController" customModule="iSeeDoughnuts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6V7-5c-Ji5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHI-Er-Sle">
+                                <rect key="frame" x="152" y="547" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2Rx-bf-ado"/>
+                                    <constraint firstAttribute="width" constant="70" id="KWZ-Bs-k4K"/>
+                                </constraints>
+                                <state key="normal" image="White x"/>
+                                <connections>
+                                    <segue destination="Zca-7t-tAs" kind="show" id="odY-Xa-lnv"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jl7-jV-fDX" customClass="AnimationPlayerView" customModule="iSeeDoughnuts" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="39" width="375" height="316"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jl7-jV-fDX" secondAttribute="height" multiplier="375:316" id="3Pe-gN-iuv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="filename" value="notHotdog"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not hotdog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqq-8h-GGf">
+                                <rect key="frame" x="0.0" y="395" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CJL-0e-oCu" firstAttribute="trailing" secondItem="Kqq-8h-GGf" secondAttribute="trailing" id="9oL-4p-Rn9"/>
+                            <constraint firstItem="CJL-0e-oCu" firstAttribute="bottom" secondItem="OHI-Er-Sle" secondAttribute="bottom" constant="50" id="JKT-1k-4qP"/>
+                            <constraint firstItem="Kqq-8h-GGf" firstAttribute="top" secondItem="jl7-jV-fDX" secondAttribute="bottom" constant="40" id="LKd-Fo-vam"/>
+                            <constraint firstItem="jl7-jV-fDX" firstAttribute="top" secondItem="CJL-0e-oCu" secondAttribute="top" constant="19" id="P1o-da-Yk7"/>
+                            <constraint firstItem="jl7-jV-fDX" firstAttribute="trailing" secondItem="CJL-0e-oCu" secondAttribute="trailing" id="QFG-zo-mt6"/>
+                            <constraint firstItem="Kqq-8h-GGf" firstAttribute="leading" secondItem="CJL-0e-oCu" secondAttribute="leading" id="Tdo-wo-xjW"/>
+                            <constraint firstItem="jl7-jV-fDX" firstAttribute="leading" secondItem="CJL-0e-oCu" secondAttribute="leading" id="YOp-od-tCK"/>
+                            <constraint firstItem="OHI-Er-Sle" firstAttribute="centerX" secondItem="6V7-5c-Ji5" secondAttribute="centerX" id="emA-Vb-7RN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CJL-0e-oCu"/>
+                    </view>
+                    <connections>
+                        <outlet property="moviePlayer" destination="jl7-jV-fDX" id="WFs-LJ-Fkq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zY-Gz-xsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="881"/>
         </scene>
     </scenes>
     <resources>

@@ -19,6 +19,12 @@
 		58FD46A01FE80EF8002E1A24 /* VomitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD469F1FE80EF8002E1A24 /* VomitViewController.swift */; };
 		58FD46A21FE82609002E1A24 /* DonutCelebrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46A11FE82609002E1A24 /* DonutCelebrationViewController.swift */; };
 		58FD46A41FE83B58002E1A24 /* RightWrongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46A31FE83B58002E1A24 /* RightWrongViewController.swift */; };
+		58FD46B61FE84758002E1A24 /* LottieAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46AF1FE84758002E1A24 /* LottieAnimationType.swift */; };
+		58FD46B71FE84758002E1A24 /* AnimationPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46B01FE84758002E1A24 /* AnimationPlayerView.swift */; };
+		58FD46B81FE84758002E1A24 /* MovieAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46B11FE84758002E1A24 /* MovieAnimationType.swift */; };
+		58FD46BD1FE849F9002E1A24 /* HotDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46BC1FE849F9002E1A24 /* HotDogViewController.swift */; };
+		58FD46C41FE8572C002E1A24 /* notHotdog.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 58FD46C31FE8572C002E1A24 /* notHotdog.m4v */; };
+		58FD46C61FE85ABD002E1A24 /* hotdog.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 58FD46C51FE85ABD002E1A24 /* hotdog.m4v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		58FD469F1FE80EF8002E1A24 /* VomitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VomitViewController.swift; sourceTree = "<group>"; };
 		58FD46A11FE82609002E1A24 /* DonutCelebrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutCelebrationViewController.swift; sourceTree = "<group>"; };
 		58FD46A31FE83B58002E1A24 /* RightWrongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightWrongViewController.swift; sourceTree = "<group>"; };
+		58FD46AF1FE84758002E1A24 /* LottieAnimationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieAnimationType.swift; sourceTree = "<group>"; };
+		58FD46B01FE84758002E1A24 /* AnimationPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationPlayerView.swift; sourceTree = "<group>"; };
+		58FD46B11FE84758002E1A24 /* MovieAnimationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAnimationType.swift; sourceTree = "<group>"; };
+		58FD46BC1FE849F9002E1A24 /* HotDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotDogViewController.swift; sourceTree = "<group>"; };
+		58FD46C31FE8572C002E1A24 /* notHotdog.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = notHotdog.m4v; sourceTree = "<group>"; };
+		58FD46C51FE85ABD002E1A24 /* hotdog.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = hotdog.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,8 @@
 		583184AB1FE3205E00A1FB0C /* iSeeDoughnuts */ = {
 			isa = PBXGroup;
 			children = (
+				58FD46BB1FE848AE002E1A24 /* extraAssets */,
+				58FD46A61FE846FE002E1A24 /* extras */,
 				58FD46A51FE83BF2002E1A24 /* Right Wrong */,
 				583184BE1FE3207C00A1FB0C /* base */,
 				583184AC1FE3205E00A1FB0C /* AppDelegate.swift */,
@@ -97,8 +111,36 @@
 				58FD46A31FE83B58002E1A24 /* RightWrongViewController.swift */,
 				58FD46A11FE82609002E1A24 /* DonutCelebrationViewController.swift */,
 				58FD469F1FE80EF8002E1A24 /* VomitViewController.swift */,
+				58FD46BC1FE849F9002E1A24 /* HotDogViewController.swift */,
 			);
 			path = "Right Wrong";
+			sourceTree = "<group>";
+		};
+		58FD46A61FE846FE002E1A24 /* extras */ = {
+			isa = PBXGroup;
+			children = (
+				58FD46A71FE84712002E1A24 /* long animations */,
+			);
+			path = extras;
+			sourceTree = "<group>";
+		};
+		58FD46A71FE84712002E1A24 /* long animations */ = {
+			isa = PBXGroup;
+			children = (
+				58FD46B01FE84758002E1A24 /* AnimationPlayerView.swift */,
+				58FD46AF1FE84758002E1A24 /* LottieAnimationType.swift */,
+				58FD46B11FE84758002E1A24 /* MovieAnimationType.swift */,
+			);
+			path = "long animations";
+			sourceTree = "<group>";
+		};
+		58FD46BB1FE848AE002E1A24 /* extraAssets */ = {
+			isa = PBXGroup;
+			children = (
+				58FD46C51FE85ABD002E1A24 /* hotdog.m4v */,
+				58FD46C31FE8572C002E1A24 /* notHotdog.m4v */,
+			);
+			path = extraAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58FD46C41FE8572C002E1A24 /* notHotdog.m4v in Resources */,
 				583184B71FE3205E00A1FB0C /* LaunchScreen.storyboard in Resources */,
+				58FD46C61FE85ABD002E1A24 /* hotdog.m4v in Resources */,
 				583184B41FE3205E00A1FB0C /* Assets.xcassets in Resources */,
 				583184B21FE3205E00A1FB0C /* Main.storyboard in Resources */,
 				58FD469E1FE80ED1002E1A24 /* RightWrong.storyboard in Resources */,
@@ -177,8 +221,12 @@
 				583184C01FE320A000A1FB0C /* BaseViewController.swift in Sources */,
 				583184AF1FE3205E00A1FB0C /* MainViewController.swift in Sources */,
 				583184C41FE324EA00A1FB0C /* food.mlmodel in Sources */,
+				58FD46B81FE84758002E1A24 /* MovieAnimationType.swift in Sources */,
+				58FD46B61FE84758002E1A24 /* LottieAnimationType.swift in Sources */,
 				58FD46A41FE83B58002E1A24 /* RightWrongViewController.swift in Sources */,
 				583184C21FE3234500A1FB0C /* FrameExtractor.swift in Sources */,
+				58FD46BD1FE849F9002E1A24 /* HotDogViewController.swift in Sources */,
+				58FD46B71FE84758002E1A24 /* AnimationPlayerView.swift in Sources */,
 				583184AD1FE3205E00A1FB0C /* AppDelegate.swift in Sources */,
 				58FD46A21FE82609002E1A24 /* DonutCelebrationViewController.swift in Sources */,
 				58FD46A01FE80EF8002E1A24 /* VomitViewController.swift in Sources */,

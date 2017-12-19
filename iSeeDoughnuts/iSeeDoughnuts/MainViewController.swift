@@ -12,9 +12,11 @@ import Vision
 class MainViewController: BaseViewController {
 
     override func mainResult(result: VNClassificationObservation, forImage: UIImage) {
+
         print("*********************************************** ")
         print("I'm \(Int(result.confidence * 100))% sure it's \(result.identifier) ")
         print("*********************************************** ")
+
     }
 
     override func allResults(results: [VNClassificationObservation], forImage: UIImage) {
