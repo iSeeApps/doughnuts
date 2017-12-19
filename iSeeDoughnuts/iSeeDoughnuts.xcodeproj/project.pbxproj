@@ -22,9 +22,10 @@
 		58FD46B61FE84758002E1A24 /* LottieAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46AF1FE84758002E1A24 /* LottieAnimationType.swift */; };
 		58FD46B71FE84758002E1A24 /* AnimationPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46B01FE84758002E1A24 /* AnimationPlayerView.swift */; };
 		58FD46B81FE84758002E1A24 /* MovieAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46B11FE84758002E1A24 /* MovieAnimationType.swift */; };
-		58FD46BD1FE849F9002E1A24 /* HotDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46BC1FE849F9002E1A24 /* HotDogViewController.swift */; };
+		58FD46BD1FE849F9002E1A24 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD46BC1FE849F9002E1A24 /* MovieViewController.swift */; };
 		58FD46C41FE8572C002E1A24 /* notHotdog.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 58FD46C31FE8572C002E1A24 /* notHotdog.m4v */; };
 		58FD46C61FE85ABD002E1A24 /* hotdog.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 58FD46C51FE85ABD002E1A24 /* hotdog.m4v */; };
+		F46031611FE94D51007D7893 /* salad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F46031601FE94D51007D7893 /* salad.mp4 */; };
 		F486D2011FE91D3900FF1226 /* background_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = F486D2001FE91D3900FF1226 /* background_pattern.png */; };
 		F493A9CC1FE80F1E00CE1406 /* Analysing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F493A9CB1FE80F1E00CE1406 /* Analysing.storyboard */; };
 		F493A9CE1FE811BA00CE1406 /* AnalysingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493A9CD1FE811BA00CE1406 /* AnalysingViewController.swift */; };
@@ -50,9 +51,10 @@
 		58FD46AF1FE84758002E1A24 /* LottieAnimationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieAnimationType.swift; sourceTree = "<group>"; };
 		58FD46B01FE84758002E1A24 /* AnimationPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationPlayerView.swift; sourceTree = "<group>"; };
 		58FD46B11FE84758002E1A24 /* MovieAnimationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAnimationType.swift; sourceTree = "<group>"; };
-		58FD46BC1FE849F9002E1A24 /* HotDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotDogViewController.swift; sourceTree = "<group>"; };
+		58FD46BC1FE849F9002E1A24 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		58FD46C31FE8572C002E1A24 /* notHotdog.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = notHotdog.m4v; sourceTree = "<group>"; };
 		58FD46C51FE85ABD002E1A24 /* hotdog.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = hotdog.m4v; sourceTree = "<group>"; };
+		F46031601FE94D51007D7893 /* salad.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = salad.mp4; sourceTree = "<group>"; };
 		F486D2001FE91D3900FF1226 /* background_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_pattern.png; sourceTree = "<group>"; };
 		F493A9CB1FE80F1E00CE1406 /* Analysing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Analysing.storyboard; sourceTree = "<group>"; };
 		F493A9CD1FE811BA00CE1406 /* AnalysingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysingViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				58FD46BB1FE848AE002E1A24 /* extraAssets */,
-				58FD46A61FE846FE002E1A24 /* extras */,
 				58FD46A51FE83BF2002E1A24 /* Right Wrong */,
 				583184BE1FE3207C00A1FB0C /* base */,
 				583184AC1FE3205E00A1FB0C /* AppDelegate.swift */,
@@ -126,7 +127,7 @@
 				58FD46A31FE83B58002E1A24 /* RightWrongViewController.swift */,
 				58FD46A11FE82609002E1A24 /* DonutCelebrationViewController.swift */,
 				58FD469F1FE80EF8002E1A24 /* VomitViewController.swift */,
-				58FD46BC1FE849F9002E1A24 /* HotDogViewController.swift */,
+				58FD46BC1FE849F9002E1A24 /* MovieViewController.swift */,
 			);
 			path = "Right Wrong";
 			sourceTree = "<group>";
@@ -152,8 +153,10 @@
 		58FD46BB1FE848AE002E1A24 /* extraAssets */ = {
 			isa = PBXGroup;
 			children = (
+				58FD46A61FE846FE002E1A24 /* extras */,
 				58FD46C51FE85ABD002E1A24 /* hotdog.m4v */,
 				58FD46C31FE8572C002E1A24 /* notHotdog.m4v */,
+				F46031601FE94D51007D7893 /* salad.mp4 */,
 			);
 			path = extraAssets;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				58FD46C41FE8572C002E1A24 /* notHotdog.m4v in Resources */,
 				583184B71FE3205E00A1FB0C /* LaunchScreen.storyboard in Resources */,
 				58FD46C61FE85ABD002E1A24 /* hotdog.m4v in Resources */,
+				F46031611FE94D51007D7893 /* salad.mp4 in Resources */,
 				F493A9CC1FE80F1E00CE1406 /* Analysing.storyboard in Resources */,
 				F486D2011FE91D3900FF1226 /* background_pattern.png in Resources */,
 				583184B41FE3205E00A1FB0C /* Assets.xcassets in Resources */,
@@ -244,7 +248,7 @@
 				58FD46B61FE84758002E1A24 /* LottieAnimationType.swift in Sources */,
 				58FD46A41FE83B58002E1A24 /* RightWrongViewController.swift in Sources */,
 				583184C21FE3234500A1FB0C /* FrameExtractor.swift in Sources */,
-				58FD46BD1FE849F9002E1A24 /* HotDogViewController.swift in Sources */,
+				58FD46BD1FE849F9002E1A24 /* MovieViewController.swift in Sources */,
 				58FD46B71FE84758002E1A24 /* AnimationPlayerView.swift in Sources */,
 				F493A9D41FE824F300CE1406 /* PostLaunchScreenViewController.swift in Sources */,
 				583184AD1FE3205E00A1FB0C /* AppDelegate.swift in Sources */,

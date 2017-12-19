@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VomitViewController: UIViewController {
+class VomitViewController: RightWrongViewController {
 
     // link to the imageView in the storyboard
     @IBOutlet weak var vomitAnimationView: UIImageView!

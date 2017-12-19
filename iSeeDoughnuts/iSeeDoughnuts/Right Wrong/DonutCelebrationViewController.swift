@@ -8,7 +8,8 @@
 
 import UIKit
 
-class DonutCelebrationViewController: UIViewController {
+class DonutCelebrationViewController: RightWrongViewController {
+    @IBOutlet weak var celebratingDonutsLabel: UILabel!
 
     // link to the imageView in the storyboard
     @IBOutlet weak var viewSprinkles: UIImageView!
@@ -24,7 +25,7 @@ class DonutCelebrationViewController: UIViewController {
         for number in 0...8 {
 
             //create and image/frame with the given number
-            let Sprinklesview = UIImage.init(imageLiteralResourceName: "sprinkles\(number)")
+            let Sprinklesview = UIImage.init(imageLiteralResourceName: "frame_\(number)")
 
             //add the image/frame to the array
             Sprinklesarray.append(Sprinklesview)
@@ -34,8 +35,10 @@ class DonutCelebrationViewController: UIViewController {
         //add the image array to the storyboard imageView
         viewSprinkles.animationImages=Sprinklesarray
 
-    }
+        let donutMessages = ["Donuts...is there anything they can't do?", "Keep calm and eat a donut.", "Mmmmm...donuts.", "You can't buy happiness but you can buy donuts and that's kinda the same thing."]
 
+        celebratingDonutsLabel.text = donutMessages.random()
+    }
 
     //when the view is presented to the screen
     override func viewDidAppear(_ animated: Bool) {
@@ -46,7 +49,5 @@ class DonutCelebrationViewController: UIViewController {
 
         //play the animation
         viewSprinkles.startAnimating()
-
     }
-
 }

@@ -10,6 +10,8 @@ import UIKit
 import Vision
 
 class MainViewController: BaseViewController {
+    @IBOutlet var shutterButton: UIButton!
+
     let screenNames: [String: String] = [
         "cup cakes": "Right",
         "chocolate cake": "Right",
@@ -47,8 +49,8 @@ class MainViewController: BaseViewController {
         "baklava": "Right",
         "risotto": "Wrong",
         "strawberry shortcake": "Right",
-        "seaweed salad": "Vomit",
-        "ceviche": "Wrong",
+        "seaweed salad": "Salad",
+        "ceviche": "Salad",
         "lobster bisque": "Wrong",
         "mussels": "Wrong",
         "dumplings": "Wrong",
@@ -79,19 +81,19 @@ class MainViewController: BaseViewController {
         "nachos": "Right",
         "hot dog": "Hotdog",
         "pad thai": "Wrong",
-        "beet salad": "Vomit",
+        "beet salad": "Salad",
         "grilled cheese sandwich": "Wrong",
-        "caesar salad": "Vomit",
+        "caesar salad": "Salad",
         "chicken quesadilla": "Wrong",
         "garlic bread": "Wrong",
         "hamburger": "Wrong",
         "lasagna": "Wrong",
         "shrimp and grits": "Wrong",
-        "greek salad": "Vomit",
+        "greek salad": "Salad",
         "gyoza": "Wrong",
         "spaghetti carbonara": "Wrong",
         "macaroni and cheese": "Wrong",
-        "caprese salad": "Vomit",
+        "caprese salad": "Salad",
         "oysters": "Vomit",
         "bruschetta": "Wrong",
         "french onion soup": "Wrong",
@@ -114,19 +116,27 @@ class MainViewController: BaseViewController {
         "pork chop": "Wrong"
     ]
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        shutterButton.layer.cornerRadius = shutterButton.frame.height / 2
+        shutterButton.layer.shadowRadius = 2
+        shutterButton.layer.shadowOpacity = 0.6
+        shutterButton.layer.shadowOffset = CGSize(width: 0, height: 3)
+        shutterButton.backgroundColor = UIColor(white: 1, alpha: 0.8)
+    }
+
     override func mainResult(result: VNClassificationObservation, forImage: UIImage) {
         var screenName = screenNames[result.identifier]!
 
-
-        if result.confidence <= 0.5 {
+        if result.confidence <= 0.4 {
             screenName = "NotHotdog"
         }
-
 
         let navigationController = UIStoryboard(name: "Analysing", bundle: nil).instantiateInitialViewController() as! UINavigationController
         let viewController = navigationController.viewControllers.first as! AnalysingViewController
 
         viewController.screenToPresent = screenName
+        viewController.foodResult = result
 
         present(navigationController, animated: true)
     }

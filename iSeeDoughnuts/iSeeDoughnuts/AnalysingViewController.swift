@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import Vision
+
+extension Array {
+    func random() -> Element {
+        return self[Int(arc4random_uniform(UInt32(count)))]
+    }
+}
 
 class AnalysingViewController: UIViewController {
     @IBOutlet private var textLabel: UILabel!
     @IBOutlet private var imageView: UIImageView!
 
     var screenToPresent: String!
+    var foodResult: VNClassificationObservation!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,15 +40,17 @@ class AnalysingViewController: UIViewController {
             "Hold the line, we'll be with you shortly"
         ]
 
-        let randomIndex = Int(arc4random_uniform(UInt32(messages.count)))
-        textLabel.text = messages[randomIndex]
+        textLabel.text = messages.random()
 
         perform(#selector(presentScreen), with: nil, afterDelay: 3)
     }
 
     @objc func presentScreen() {
         let board = UIStoryboard(name: "RightWrong", bundle: nil)
-        let viewController = board.instantiateViewController(withIdentifier: screenToPresent)
+        let viewController = board.instantiateViewController(withIdentifier: screenToPresent) as! RightWrongViewController
+
+        viewController.foodResult = foodResult
+
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

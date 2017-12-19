@@ -36,9 +36,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CZO-Py-wlN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBF-yf-EyH">
-                                <rect key="frame" x="164" y="557" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBF-yf-EyH">
+                                <rect key="frame" x="142" y="497" width="90" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Urt-gN-Qqy"/>
+                                    <constraint firstAttribute="height" constant="90" id="xcq-lT-WHT"/>
+                                </constraints>
+                                <state key="normal" image="donut-button"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXq-K4-FCU"/>
                                 </connections>
@@ -58,10 +63,14 @@
                     <navigationItem key="navigationItem" id="Kk8-BT-XlD"/>
                     <connections>
                         <outlet property="previewImage" destination="CZO-Py-wlN" id="vj6-TR-jXQ"/>
+                        <outlet property="shutterButton" destination="pBF-yf-EyH" id="RX9-I8-cN4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="donut-button" width="90" height="87"/>
+    </resources>
 </document>
