@@ -35,7 +35,7 @@ class DonutCelebrationViewController: RightWrongViewController {
         //add the image array to the storyboard imageView
         viewSprinkles.animationImages=Sprinklesarray
 
-        let donutMessages = ["Donuts...is there anything they can't do?", "Keep calm and eat a donut.", "Mmmmm...donuts.", "You can't buy happiness but you can buy donuts and that's kinda the same thing."]
+        let donutMessages = ["Donuts… is there anything they can't do?", "Keep calm and eat a donut.", "Mmmmm… donuts.", "You can't buy happiness but you can buy donuts and that's kinda the same thing."]
 
         celebratingDonutsLabel.text = donutMessages.random()
     }

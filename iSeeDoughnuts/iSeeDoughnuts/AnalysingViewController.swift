@@ -21,6 +21,7 @@ class AnalysingViewController: UIViewController {
 
     var screenToPresent: String!
     var foodResult: VNClassificationObservation!
+    var screenDetails: (view: String, plural: Bool?)!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +36,9 @@ class AnalysingViewController: UIViewController {
         imageView.layer.cornerRadius = 30
 
         let messages: [String] = [
-            "Our data scientists are working hard right now",
-            "Your query is important to us",
-            "Hold the line, we'll be with you shortly"
+            "Our data scientists are processing your request.",
+            "Your query is important to us, please wait…",
+            "Hold the line, we'll be with you shortly."
         ]
 
         textLabel.text = messages.random()
@@ -50,6 +51,7 @@ class AnalysingViewController: UIViewController {
         let viewController = board.instantiateViewController(withIdentifier: screenToPresent) as! RightWrongViewController
 
         viewController.foodResult = foodResult
+        viewController.screenDetails = screenDetails
 
         navigationController?.pushViewController(viewController, animated: true)
     }

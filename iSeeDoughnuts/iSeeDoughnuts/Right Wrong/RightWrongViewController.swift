@@ -11,12 +11,10 @@ import Vision
 
 class RightWrongViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
-
     @IBOutlet weak var backgroundImageView: UIImageView?
 
-
-
     var foodResult: VNClassificationObservation!
+    var screenDetails: (view: String, plural: Bool?)!
 
     @IBAction func dimissAnimated() {
         dismiss(animated: true)
@@ -25,7 +23,19 @@ class RightWrongViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        resultLabel.text = "\(Int(foodResult.confidence * 100))% it's \(foodResult.identifier)"
+        var confidenceText = "We're \(Int(foodResult.confidence * 100))% sure"
+
+        if screenDetails.plural == true {
+            confidenceText = "\(confidenceText) those are"
+        } else if screenDetails.plural == false {
+            confidenceText = "\(confidenceText) that is"
+        } else {
+            confidenceText = "\(confidenceText) that is a"
+        }
+
+        confidenceText = "\(confidenceText) \(foodResult.identifier)"
+
+        resultLabel.text = confidenceText
 
         var Sprinklesarray = [UIImage]()
 
